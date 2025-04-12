@@ -25,7 +25,7 @@ func main() {
 	fmt.Print("Digite o nome: ")
 	fmt.Scan(&alunos[0][2])
 
-	fmt.Println("\n📋 Dados do Aluno:")
+	fmt.Println("\n Dados do Aluno:")
 	fmt.Printf("Índice: %s, RA: %s, Nome: %s\n", alunos[0][0], alunos[0][1], alunos[0][2])
 }
 
@@ -47,7 +47,7 @@ func main() {
 		Quantidade: 15,
 	}
 
-	fmt.Println("📦 Informações do Produto:")
+	fmt.Println(" Informações do Produto:")
 	fmt.Println("Nome:", produto.Nome)
 	fmt.Println("Preço:", produto.Preco)
 	fmt.Println("Quantidade em estoque:", produto.Quantidade)

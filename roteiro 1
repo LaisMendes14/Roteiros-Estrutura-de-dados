@@ -1,0 +1,82 @@
+//exe 1
+package main
+
+import (
+	"fmt"
+)
+
+func ParOuImpar(n int) string {
+	if n%2 == 0 {
+		return "Par"
+	}
+	return "Ímpar"
+}
+
+func main() {
+	var numero int
+	fmt.Print("Digite um número: ")
+	fmt.Scan(&numero)
+	fmt.Println("Resultado:", ParOuImpar(numero))
+}
+
+//exe 2
+package main
+
+import (
+	"fmt"
+)
+
+func ClassificarNota(nota int) string {
+	switch {
+	case nota >= 9 && nota <= 10:
+		return "Excelente"
+	case nota >= 7 && nota <= 8:
+		return "Bom"
+	case nota >= 5 && nota <= 6:
+		return "Regular"
+	case nota >= 3 && nota <= 4:
+		return "Ruim"
+	case nota >= 0 && nota <= 2:
+		return "Muito Ruim"
+	default:
+		return "Nota inválida"
+	}
+}
+
+func main() {
+	var nota int
+	fmt.Print("Digite uma nota (0 a 10): ")
+	fmt.Scan(&nota)
+	fmt.Println("Classificação:", ClassificarNota(nota))
+}
+
+//exe 3
+package main
+
+import (
+	"fmt"
+)
+
+func ClassificarNota(nota int) string {
+	switch {
+	case nota >= 9 && nota <= 10:
+		return "Excelente"
+	case nota >= 7 && nota <= 8:
+		return "Bom"
+	case nota >= 5 && nota <= 6:
+		return "Regular"
+	case nota >= 3 && nota <= 4:
+		return "Ruim"
+	case nota >= 0 && nota <= 2:
+		return "Muito Ruim"
+	default:
+		return "Nota inválida"
+	}
+}
+
+func main() {
+	var nota int
+	fmt.Print("Digite uma nota (0 a 10): ")
+	fmt.Scan(&nota)
+	fmt.Println("Classificação:", ClassificarNota(nota))
+}

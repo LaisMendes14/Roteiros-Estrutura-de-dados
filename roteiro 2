@@ -1,0 +1,54 @@
+//exe 1
+package main
+
+import "fmt"
+
+func main() {
+		ra := [6]int{2, 2, 3, 1, 3, 5}
+
+	fmt.Println("RA:", ra)
+}
+
+//exe2
+package main
+
+import "fmt"
+
+func main() {
+	var alunos [1][3]string // [linha][coluna]: 1 aluno, 3 infos (índice, RA, nome)
+
+	fmt.Println("Cadastro de Aluno")
+	fmt.Print("Digite o índice: ")
+	fmt.Scan(&alunos[0][0])
+	fmt.Print("Digite o RA: ")
+	fmt.Scan(&alunos[0][1])
+	fmt.Print("Digite o nome: ")
+	fmt.Scan(&alunos[0][2])
+
+	fmt.Println("\n📋 Dados do Aluno:")
+	fmt.Printf("Índice: %s, RA: %s, Nome: %s\n", alunos[0][0], alunos[0][1], alunos[0][2])
+}
+
+//exe 3
+package main
+
+import "fmt"
+
+type Produto struct {
+	Nome      string
+	Preco     float64
+	Quantidade int
+}
+
+func main() {
+	produto := Produto{
+		Nome:      "Teclado Mecânico",
+		Preco:     249.90,
+		Quantidade: 15,
+	}
+
+	fmt.Println("📦 Informações do Produto:")
+	fmt.Println("Nome:", produto.Nome)
+	fmt.Println("Preço:", produto.Preco)
+	fmt.Println("Quantidade em estoque:", produto.Quantidade)
+}
